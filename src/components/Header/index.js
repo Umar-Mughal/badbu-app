@@ -18,8 +18,8 @@ function Header({ currentLink }) {
         document.body.style.overflow = isMobileOpen ? 'hidden' : 'auto';
     }, [isMobileOpen]);
 
-    const socialLinks = (
-        <div className="my-4 my-lg-5 my-xl-0 social-links d-flex justify-content-center justify-content-md-start">
+    const getSocialLinks = (show) => (
+        !show? null : <div className="my-4 my-lg-5 my-xl-0 social-links d-flex justify-content-center justify-content-md-start">
             {mockSocialLinks.map((item, index) => (
                 <a href={item.link} key={index}>
                     {item.icon}
@@ -92,7 +92,7 @@ function Header({ currentLink }) {
         <StyledHeader className='w-100 d-block bg-white overflow-hidden'>
             <div className='header-top d-none d-xl-flex justify-content-between align-items-center w-100 px-3 
             px-xxl-4 py-2 py-xxl-3'>
-                {socialLinks}
+                {getSocialLinks(false)}
                 <div className="flex-grow-1 ms-1 ms-xxl-3 d-flex align-items-center justify-content-between">
                     {leftList}
                     {rightList}
