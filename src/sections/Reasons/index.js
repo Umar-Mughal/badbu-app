@@ -71,7 +71,7 @@ function Reasons({ setCurrentLink }) {
                                             <p className='text-colored'>{item.text}</p>
                                         </div>
                                         <div className="w-100 mt-5 position-relative"
-                                            style={{ background: `url(${item.image}) left center/cover no-repeat` }}>
+                                             style={{ background: `url(${item.image}) left center/contain no-repeat` }}>
                                             <img src={item.image} alt={item.title} className="d-none d-md-block w-100" />
                                         </div>
                                     </li>
@@ -244,8 +244,7 @@ function Reasons({ setCurrentLink }) {
                             and more patients all over the world can heal from the secrets being revealed within the cannabis flower.
                         </p>
                         <div className='map-wrapper mt-4 mb-3 position-relative'>
-                            <img src={reason7Map} alt="reason7Map" className=' d-none d-md-block reason7-map' />
-                            <div className='mob-map' />
+                            <img src={reason7Map} alt="reason7Map" className='d-md-block reason7-map-mobile' />
                             <p className='text-colored'>
                                 By investing in Budding Technologies, Inc., you help patients and consumers around the world gain faster
                                 and easier access to the

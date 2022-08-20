@@ -1,4 +1,4 @@
-import ideaImage from '../../assets/images/billion-idea.png';
+import ideaImage from '../../assets/images/billion-idea.svg';
 import solutionImage from '../../assets/images/billion-solution.png';
 
 export const mockBillionIdea = {

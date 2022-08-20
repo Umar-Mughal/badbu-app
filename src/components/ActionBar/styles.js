@@ -42,7 +42,7 @@ export const StyledActionBar = styled.div`
                 transform: translateX(30px);
             }
             @media (min-width: 1800px) {
-                transform: translateX(-70px);
+                transform: translateX(-145px);
             }
             @media (max-width: 1280px) {
                 position: relative !important;

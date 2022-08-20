@@ -5,7 +5,6 @@ import logo1 from '../../assets/images/reason1-logo.png';
 import logo2 from '../../assets/images/reason1-logo2.png';
 import logo3 from '../../assets/images/reason1-logo3.png';
 import reason5mob from '../../assets/images/reason5-bg-mob.png';
-import reason7mob from '../../assets/images/reason7-map-mob.png';
 import token from '../../assets/images/token.svg';
 
 export const StyledReasons = styled.div`
@@ -86,8 +85,7 @@ export const StyledReasons = styled.div`
                 }
                 &:nth-child(2) {   
                     @media (max-width: 767px) {
-                        height: 520px;
-                        right: -16px;
+                        height: 245px;
                     }
                 }
             }
@@ -139,7 +137,6 @@ export const StyledReasons = styled.div`
                         &:nth-child(2) {
                             background-position: right !important;
                             right: auto;
-                            left: -16px;
                         }
                     }
                 }
@@ -301,7 +298,7 @@ export const StyledReasons = styled.div`
                 z-index: 99;
                 
                 @media (max-width: 767px) {
-                    margin-top: -50px;
+                    margin-top: 26px;
                     position: relative;
                     left: 0;
                 }
@@ -312,19 +309,10 @@ export const StyledReasons = styled.div`
                 }
             }
             @media (max-width: 767px) {
-                .mob-map {
-                    height: 550px;
-                    position: relative;
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: -16px;
-                        width: 100vw;
-                        height: 100%;
-                        background: url(${reason7mob}) center center /contain no-repeat;
-                    }
-                }
+              .reason7-map-mobile {
+                width: 100%;
+                height: 253px;
+              }
             }
         }
         .reason7-map {

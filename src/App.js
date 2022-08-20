@@ -34,7 +34,7 @@ function App() {
           <StyledWhiteWrapper>
                 <div className='width-wrapper video'>
                     <div className='video-container d-flex justify-content-between'>
-                        <iframe width="100%" height="620px" src="https://www.youtube.com/watch?v=YKveT6ofEQU"
+                        <iframe width="100%" height="620px" src="https://www.youtube.com/embed/YKveT6ofEQU"
                                 title="YouTube video player" frameBorder="{0}"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen

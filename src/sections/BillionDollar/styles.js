@@ -18,8 +18,12 @@ export const StyledBillionDollar = styled.div`
         }
         >div {
             > img {
-                margin: 48px 0;
-                transform: scale(1.07);
+                margin-top: 48px;
+               transform: scale(1.05);
+
+              @media(max-width: 767px){
+                  margin-left: 3px;
+                }
             }
         }
     }

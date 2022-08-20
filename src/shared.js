@@ -304,8 +304,11 @@ export const StyledWhiteWrapper = styled.div`
         }
     }
     .width-wrapper {
+      //padding-right: 11%;
         &.video {
-            width: 83%;
+            //width: 83%;
+          display: flex;
+          justify-content: start;
             @media (max-width: 992px) {
                 width: 100%;
             }
@@ -313,13 +316,8 @@ export const StyledWhiteWrapper = styled.div`
                 margin: 0 auto;
             }
             .video-container {
-                @media (max-width: 1919px) {
-                    width: calc(100% - 350px);    
-                }
-                @media (max-width: 1600px) {
-                    width: calc(100% - 200px);    
-                }
-                @media (max-width: 1400px) {
+              //width: calc(100% - 205px);
+              @media (max-width: 767px) {
                     width:100%;
                 }
             }
@@ -333,8 +331,12 @@ export const StyledWhiteWrapper = styled.div`
         position: relative;
         z-index: 1;
         width: 100%;
-        max-width: 1125px;
-        iframe {
+        max-width: 1116.91px;
+      @media(min-width: 1800px){
+        margin-left: 7%;
+      }
+
+      iframe {
             width: 100%;
           height: 627px;
           border-radius: 24px;
