@@ -58,8 +58,7 @@ export const StyledMain = styled.section`
             width: 1200px;
         }
         @media (max-width: 480px) {
-            top: auto;
-            bottom: -200px;            
+            top: 450px;
         }
     }
 `

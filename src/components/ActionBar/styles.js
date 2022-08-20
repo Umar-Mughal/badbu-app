@@ -406,6 +406,9 @@ export const StyledSwiper = styled.div`
         @media (max-width: 1600px) {
             left: 55px;
         }
+      @media (max-width: 480px) {
+        left: 90px;
+      }
         &::after {
             background: url(${swiperArrow}) center center/contain no-repeat;
             transform: rotate(180deg);
@@ -417,6 +420,9 @@ export const StyledSwiper = styled.div`
         @media (max-width: 1600px) {
             right: 55px;    
         }
+      @media (max-width: 480px) {
+        right: 90px;
+      }
         &::after {
             background: url(${swiperArrow}) center center/contain no-repeat;
         }

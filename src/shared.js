@@ -336,16 +336,11 @@ export const StyledWhiteWrapper = styled.div`
         max-width: 1125px;
         iframe {
             width: 100%;
-            border-radius: 24px;
+          height: 627px;
+          border-radius: 24px;
             @media (max-width: 767px) {
                 height: 191px;
                 margin-top: 40px;
-            }
-            @media (max-width: 992px) {
-                height: 300px;
-            }
-            @media (max-width: 1600px) {
-                height: 400px;
             }
         }   
         @media (min-width: 992px) {
@@ -372,6 +367,9 @@ export const StyledWhiteWrapper = styled.div`
         padding: 0 16px;
         margin: 0;
     }
+      @media (max-width: 480px) {
+        margin-top: 190px;
+      }
 `
 
 export const StyledColoredWrapper = styled.div`

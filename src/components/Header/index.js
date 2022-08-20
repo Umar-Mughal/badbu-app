@@ -6,6 +6,7 @@ import { ReactComponent as MailIcon } from '../../assets/images/mail-icon.svg';
 import { ReactComponent as OfferIcon } from '../../assets/images/offer-icon.svg';
 import { ReactComponent as TelIcon } from '../../assets/images/tel-icon.svg';
 import { getClassNames, mockSocialLinks, useMobileMode } from '../../shared';
+import Divider from '../ActionBar/Divider';
 import { StyledHeader } from './styles';
 import { mockHeaderLinks } from './constants';
 
@@ -100,7 +101,7 @@ function Header({ currentLink }) {
             <div className='header-bottom bg-white d-flex justify-content-between align-items-center w-100 px-3
              px-xxl-4 py-2 py-xxl-3 border-top'>
                 <img src={isMobileMode ? headerLogoMob : headerLogo} alt="header-logo"
-                    className='me-2 me-md-0 cursor-pointer'
+                    className='me-4 me-md-0 cursor-pointer'
                     onClick={() => {
                         window.scrollTo({
                             top: 0,
@@ -117,7 +118,7 @@ function Header({ currentLink }) {
                     ))}
                 </div>
                 <div className={getClassNames('d-flex align-items-center', isMobileMode ? 'flex-grow-1 mobile' : '')}>
-                    <a href="#" className="btn flex-grow-1">
+                    <a href="#" className="btn flex-grow-1 me-2">
                         Invest now
                     </a>
                     <div className={getClassNames('hamburger d-flex align-items-center justify-content-end ' +
@@ -149,7 +150,7 @@ function Header({ currentLink }) {
                 ))}
 
                 {rightList}
-                {socialLinks}
+                <Divider/>
                 {leftList}
 
             </div>
