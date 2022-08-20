@@ -119,9 +119,9 @@ export const StyledReasons = styled.div`
                                     right: -75px;
                                 }
                                 @media (max-width: 767px) {
-                                    right: auto;
-                                    left: -27px;
-                                    width: 270px;
+                                  right: 0;
+                                  width: 150px;
+                                  height: 183px;
                                 }
 
                             }
