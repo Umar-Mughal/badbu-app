@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useInView } from 'react-hook-inview';
 
 import table from '../../assets/images/table.svg';
-import uniqueImage from '../../assets/images/unique-img.svg';
+import uniqueImage from '../../assets/images/unique-img.png';
 import uniqueImageMob from '../../assets/images/unique-img-mob.png';
 import violetMap from '../../assets/images/violet-map.svg';
 import violetMapMob from '../../assets/images/violet-map-mob.svg';

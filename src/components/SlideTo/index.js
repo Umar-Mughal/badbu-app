@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import discoverLogo from '../../assets/images/discover-logo.svg';
 import matchLogo from '../../assets/images/match-logo.svg';
-import matchImage from '../../assets/images/swiper-match.svg';
+import matchImage from '../../assets/images/swiper-match1.png';
 import { getClassNames, useTabletMode } from '../../shared';
 import PhoneSwiper from '../PhoneSwiper';
 import { StyledSlideTo } from './styles';

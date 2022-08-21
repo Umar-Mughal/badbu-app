@@ -10,7 +10,7 @@ import GilroyMediumItalicWoff from './assets/fonts/Gilroy-MediumItalic.woff';
 import GilroyMediumItalicWoff2 from './assets/fonts/Gilroy-MediumItalic.woff2';
 import GilroySBoldWoff from './assets/fonts/Gilroy-Semibold.woff';
 import GilroySBoldWoff2 from './assets/fonts/Gilroy-Semibold.woff2';
-import connectBgMob from './assets/images/connect-bg-mob.svg';
+import connectBgMob from './assets/images/connect-bg-mob.png';
 import { ReactComponent as Facebook } from './assets/images/facebook-icon.svg';
 import { ReactComponent as Instagram } from './assets/images/instagram-icon.svg';
 import token from './assets/images/token.svg';
@@ -207,7 +207,7 @@ export const GlobalStyles = createGlobalStyle`
             transition: 0.3s ease-in-out;
         }
         &:hover {
-            background-color: #059479;
+            background-color: #5413df;
             color: #fff;
             img {
                 transform: translateX(15px);

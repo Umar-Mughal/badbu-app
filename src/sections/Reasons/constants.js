@@ -1,6 +1,6 @@
-import image1 from '../../assets/images/reason1-img.svg';
-import image2 from '../../assets/images/reason1-img2.svg';
-import image3 from '../../assets/images/reason1-img3.svg';
+import image1 from '../../assets/images/reason1-img.png';
+import image2 from '../../assets/images/reason1-img2.png';
+import image3 from '../../assets/images/reason1-img3.png';
 
 export const reason1Content = [
     {

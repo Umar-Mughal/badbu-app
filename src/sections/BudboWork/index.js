@@ -1,4 +1,4 @@
-import workImage from '../../assets/images/work-bg.svg';
+import workImage from '../../assets/images/work-bg.png';
 import { StyledBudboWork } from './styles';
 import { mockBenefits, mockCompanyLogos } from './constants';
 
@@ -19,8 +19,9 @@ function BudboWork() {
                         />
                     </div>
                     <div style={{ maxWidth: '850px' }}>
-
-                        <div className="mob-img d-md-none" />
+                        <div className={'mob__img_container_budbo_work'}>
+                            <div className="mob-img d-md-none" />
+                        </div>
                         <h3>Budbo is a complete technology solution that benefits cannabis dispensaries, growers,
                             couriers, and users.</h3>
                         <p className='mt-4 mb-5 text-colored'>

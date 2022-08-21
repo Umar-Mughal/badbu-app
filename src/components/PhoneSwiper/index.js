@@ -2,10 +2,10 @@ import ReactPlayer from 'react-player';
 
 import budboDiscover from '../../assets/budbo-discover.mp4'
 import budboMatch from '../../assets/budbo-match.mp4'
-import r2Phone1 from '../../assets/images/r2-phone1.svg';
-import r2Phone3 from '../../assets/images/r2-phone3.svg';
-import r4Phone1 from '../../assets/images/r4-phone1.svg';
-import r4Phone3 from '../../assets/images/r4-phone3.svg';
+import r2Phone1 from '../../assets/images/r2-phone1.png';
+import r2Phone3 from '../../assets/images/r2-phone3.png';
+import r4Phone1 from '../../assets/images/r4-phone1.png';
+import r4Phone3 from '../../assets/images/r4-phone3.png';
 import { getClassNames, useTabletMode } from '../../shared';
 import { StyledPhoneSwiper } from './styles';
 

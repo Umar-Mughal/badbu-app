@@ -13,7 +13,7 @@ export const StyledBudboWork = styled.div`
             content: '';
             position: absolute;
             top: 0;
-            left: -16px;
+            width: 100%;
             //width: 100vw;
             height: 100%;
             background: url(${workImageMob}) center center /contain no-repeat;
@@ -26,6 +26,13 @@ export const StyledBudboWork = styled.div`
             font-size: 16px;
         }
     }
+  @media (max-width: 767px) {
+    .mob__img_container_budbo_work {
+      margin: 0 -15px;
+    }
+    
+  }
+
     .benefits {
         li {
             padding: 32px 24px;

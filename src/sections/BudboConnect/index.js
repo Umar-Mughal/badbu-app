@@ -1,4 +1,4 @@
-import connectBg from '../../assets/images/connect-bg.svg';
+import connectBg from '../../assets/images/connect-bg.png';
 import WhoBudboIsFor from '../../components/WhoBudboIsFor';
 import { StyledColoredWrapper } from '../../shared';
 import { StyledBudboConnect } from './styles';

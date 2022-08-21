@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-hook-inview';
 
-import mentor from '../../assets/images/mentor.svg'
-import reason5 from '../../assets/images/reason5-bg.svg';
-import reason7Map from '../../assets/images/reason7-map.svg'
+import mentor from '../../assets/images/mentor.png'
+import reason5 from '../../assets/images/reason5-bg.png';
+import reason7Map from '../../assets/images/reason7-map.png'
 import mentor2 from '../../assets/images/stephen-CFO.png'
 import table from '../../assets/images/table.svg'
 import PhoneSwiper from '../../components/PhoneSwiper';

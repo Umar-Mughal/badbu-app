@@ -216,7 +216,7 @@ export const StyledActionBar = styled.div`
                         padding: 12px 0; 
                     }
                     &:hover {
-                        background-color: #059479;
+                        background-color: #5413df;
                     }
                 }
                 .invest {
