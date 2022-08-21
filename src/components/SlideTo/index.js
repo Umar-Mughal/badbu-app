@@ -47,9 +47,13 @@ export default function SlideTo({ discover }) {
                 </div>
 
                 {discover ?
-                    <div className='col-10 mx-auto col-md-12'>
+                    mobileMode
+                        ?
                         <PhoneSwiper switchMobileMode={mobileMode} discover description />
-                    </div>
+                        :
+                        <div className='w-100 position-relative'>
+                            <img src={mobileMode ? discoverLogo : matchImage} alt="match" className='w-100' />
+                        </div>
                     :
                     mobileMode
                         ?

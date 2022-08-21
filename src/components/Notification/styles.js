@@ -30,7 +30,6 @@ export const StyledNotification = styled.div`
     }
     a {
         margin-top: 32px;
-        background: #00B493;
         color: #fff;
         width: 100%;
         padding: 15px;

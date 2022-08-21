@@ -8,7 +8,7 @@ function Notification({ title, description, link, linkText, transformed, minimiz
                 transformed ? 'transformed' : '')}>
                 <h2>{title}</h2>
                 {description && <h3 className={getClassNames(minimized ? 'minimized' : '')}>{description}</h3>}
-                <a href={link} className='btn'>
+                <a href={link} className='btn btn-primary'>
                     {linkText}
                     <img src={arrowSm} alt='arrow' className='ms-1' />
                 </a>

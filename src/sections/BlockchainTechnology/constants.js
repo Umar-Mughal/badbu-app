@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import polygonLogo from '../../assets/images/polygon-logo.svg';
+import techPolyMob from '../../assets/images/tech-poly-mob.svg';
+import techUniswapMob from '../../assets/images/tech-uniswap-mob.svg';
 import technologyImage from '../../assets/images/technology-img.png';
-import technologyImage2Mob from '../../assets/images/technology-img-mob.png';
 import technologyImage2 from '../../assets/images/technology-img2.png';
 import uniswapLogo from '../../assets/images/uniswap-logo.svg';
 
@@ -14,7 +15,7 @@ export const mockBlockchainTechnologies = [
             relayed back to these key cannabis industry producers from the budbo user interactions within
             the application. In return the user is rewarded for this sharing of data.</h4>,
         image: technologyImage,
-        image2: technologyImage,
+        image2: techPolyMob,
         description:
             <p className='text-colored'>
                 For instance, strain match data gives <span className='text-body fw-bold'>
@@ -44,7 +45,7 @@ export const mockBlockchainTechnologies = [
         title: <h4>Another key component of the Budbo ecosystem is the use of swap and pool protocols
             when dealing with transactions inside the app.</h4>,
         image: technologyImage2,
-        image2: technologyImage2Mob,
+        image2: techUniswapMob,
         description:
             <p className='text-colored'>
                 For some, the technical barrier to entry into tokens and cryptocurrency is still high, which

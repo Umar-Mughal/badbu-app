@@ -22,15 +22,19 @@ export const StyledBlockChainTechnology = styled.div`
             }
             img {
                 &:not(.logo) {
-                    margin: 48px 0;
-                    border-radius: 48px;
+                    margin: 24px 0;
                     @media (max-width: 768px) {
-                        margin: 32px 0;
-                        border-radius: 24px;
-                        max-width: 550px;
+                      margin: 0;
+                      width: 100% !important;
                     }
                 }
             }
+          div {
+            border-radius: 48px;
+            @media (max-width: 768px) {
+              border-radius: 24px;
+            }
+          }
         }
     }
 `

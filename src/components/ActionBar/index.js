@@ -224,7 +224,7 @@ function ActionBar() {
 
                     </div>
                     {!isShorterScreen &&
-                        <a href="#" className='d-none mt-2 mb-3 text-nowrap btn w-100 d-md-flex align-items-center justify-content-center'>
+                        <a href="#" className='d-none mt-2 mb-3 text-nowrap btn-primary w-100 d-md-flex align-items-center justify-content-center'>
                             INVEST
                             <img src={arrowSm} alt="arrow" className='ms-2' />
                         </a>}

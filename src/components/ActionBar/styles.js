@@ -210,7 +210,6 @@ export const StyledActionBar = styled.div`
                 a {
                     color: #fff;
                     font-weight: bold;
-                    background-color: #00B493;
                     padding: 16px 0;
                     border-radius: 8px;
                     @media (max-height: 1000px) and (min-width: 768px) {
