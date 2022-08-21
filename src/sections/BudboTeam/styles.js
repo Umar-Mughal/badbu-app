@@ -92,7 +92,7 @@ export const StyledBudboTeam = styled.div`
     }
     .team {
         margin: 54px 0 100px;
-        gap: 2.3vw;
+        gap: 1.8vw;
         h4 {
             font-size: 20px;
         }
@@ -144,7 +144,6 @@ export const StyledBudboTeam = styled.div`
     .team-width-container {
         max-width: 960px;
         @media (min-width: 1600px) {
-            max-width: 1120px;
         }
     }
     .faq {

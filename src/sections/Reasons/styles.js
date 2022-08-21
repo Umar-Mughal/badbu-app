@@ -291,11 +291,11 @@ export const StyledReasons = styled.div`
         }
         .map-wrapper {
             p {
-                max-width: 582px;
                 bottom: 0;
-                left: 40px;
-                position: absolute;
+                //position: absolute;
                 z-index: 99;
+              padding-right: 70px;
+              margin-top: 50px;
                 
                 @media (max-width: 767px) {
                     margin-top: 26px;
@@ -308,9 +308,12 @@ export const StyledReasons = styled.div`
                     left: 10px;
                 }
             }
-            @media (max-width: 767px) {
+          .reason7-map-mobile {
+          width: 100%;
+          height: 100%;
+        }
+          @media (max-width: 767px) {
               .reason7-map-mobile {
-                width: 100%;
                 height: 253px;
               }
             }

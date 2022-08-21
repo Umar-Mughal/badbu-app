@@ -3,8 +3,8 @@ import inside1 from '../../assets/images/inside1.svg'
 import inside2 from '../../assets/images/inside2.svg'
 import inside3 from '../../assets/images/inside3.svg'
 import inside4 from '../../assets/images/inside4.svg'
-import uma from '../../assets/images/uma.png'
-import umaMob from '../../assets/images/uma-mob.png'
+import uma from '../../assets/images/uma.svg'
+import umaMob from '../../assets/images/uma-mob.svg'
 import SlideTo from '../../components/SlideTo'
 import WhoBudboIsFor from '../../components/WhoBudboIsFor/index';
 import { StyledColoredWrapper, StyledInsideUl, useMobileMode } from '../../shared';

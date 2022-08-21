@@ -5,13 +5,6 @@ export const StyledBudboWork = styled.div`
     h2 {
         margin-top: 148px;
     }
-    .work-image {
-        margin: 100px 0;
-        transform: translateX(-50px) scale(1.2);
-        @media (min-width: 992px) {
-            transform: translateX(-150px) scale(1.2);
-        }
-    }
     .mob-img {
         height: 520px;
         position: relative;
@@ -21,7 +14,7 @@ export const StyledBudboWork = styled.div`
             position: absolute;
             top: 0;
             left: -16px;
-            width: 100vw;
+            //width: 100vw;
             height: 100%;
             background: url(${workImageMob}) center center /contain no-repeat;
         }
@@ -40,7 +33,7 @@ export const StyledBudboWork = styled.div`
             margin-bottom: 32px;
             @media (min-width: 992px) {
                 width: calc(50% - 16px);
-                padding: 88px 48px;
+                padding: 66px 48px;
             }
             img {
                 width: 30px;

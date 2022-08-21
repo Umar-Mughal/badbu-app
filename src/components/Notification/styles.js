@@ -1,8 +1,8 @@
 import styled from 'styled-components/macro';
 
-import notificationBg from '../../assets/images/notification-bg.png';
+import notificationBg from '../../assets/images/notification-bg.svg';
 import mobBg from '../../assets/images/notification-bg-mob.png';
-import owl from '../../assets/images/owl.svg';
+import owl from '../../assets/images/Owl.svg';
 
 export const StyledNotification = styled.div`
     position: relative;

@@ -2,7 +2,7 @@
 import polygonLogo from '../../assets/images/polygon-logo.svg';
 import techPolyMob from '../../assets/images/tech-poly-mob.svg';
 import techUniswapMob from '../../assets/images/tech-uniswap-mob.svg';
-import technologyImage from '../../assets/images/technology-img.png';
+import technologyImage from '../../assets/images/technology-img.svg';
 import technologyImage2 from '../../assets/images/technology-img2.png';
 import uniswapLogo from '../../assets/images/uniswap-logo.svg';
 

@@ -1,10 +1,10 @@
-import bronzeAvatar from '../../assets/images/shareholder/bronze.png';
-import greenAvatar from '../../assets/images/shareholder/green.png';
-import greyAvatar from '../../assets/images/shareholder/grey.png';
-import purpleAvatar from '../../assets/images/shareholder/purple.png';
-import redAvatar from '../../assets/images/shareholder/red.png';
-import yellowAvatar from '../../assets/images/shareholder/yellow.png';
-import photo1 from '../../assets/images/slider-photo.png';
+import bronzeAvatar from '../../assets/images/shareholder/bronze.svg';
+import greenAvatar from '../../assets/images/shareholder/green.svg';
+import greyAvatar from '../../assets/images/shareholder/grey.svg';
+import purpleAvatar from '../../assets/images/shareholder/purple.svg';
+import redAvatar from '../../assets/images/shareholder/redAvatar.svg';
+import yellowAvatar from '../../assets/images/shareholder/yellow.svg';
+import photo1 from '../../assets/images/slider-photo.svg';
 import { StyledOptions } from './styles';
 
 export const mockSideBarContent = [

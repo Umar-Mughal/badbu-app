@@ -1,4 +1,4 @@
-import workImage from '../../assets/images/work-bg.png';
+import workImage from '../../assets/images/work-bg.svg';
 import { StyledBudboWork } from './styles';
 import { mockBenefits, mockCompanyLogos } from './constants';
 
@@ -11,8 +11,13 @@ function BudboWork() {
                         <h2 className="mb-5 text-start text-md-center">
                             How Does <span className="text-primary">Budbo</span> Work?</h2>
                     </div>
-                    <img src={workImage} alt="How does budbo work?"
-                        className='d-none d-md-block work-image w-100' />
+                    <div style={{ maxWidth: '850px' }} className="mb-5">
+                        <img src={workImage} alt="How does budbo work?"
+                             className='d-none d-md-block'
+                            width={'100%'}
+                             height={'100%'}
+                        />
+                    </div>
                     <div style={{ maxWidth: '850px' }}>
 
                         <div className="mob-img d-md-none" />

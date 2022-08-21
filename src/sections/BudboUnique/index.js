@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-hook-inview';
 
-import table from '../../assets/images/table.png';
-import uniqueImage from '../../assets/images/unique-img.png';
+import table from '../../assets/images/table.svg';
+import uniqueImage from '../../assets/images/unique-img.svg';
 import uniqueImageMob from '../../assets/images/unique-img-mob.png';
 import violetMap from '../../assets/images/violet-map.svg';
 import violetMapMob from '../../assets/images/violet-map-mob.svg';
@@ -33,8 +33,11 @@ function BudboUnique({ setCurrentLink }) {
                     {isMobileMode ?
                         <img src={uniqueImageMob} alt="Budbo Unique" className='w-100 unique-img' />
                         :
-                        <img src={uniqueImage} alt="Budbo Unique" className='w-100 unique-img'
-                            style={{ maxWidth: '1100px' }} />
+                        <div style={{ maxWidth: '860px' }}>
+                            <img src={uniqueImage} alt="Budbo Unique" className='w-100 unique-img'
+                                 width={'100%'} height={'100%'} />
+                        </div>
+
                     }
                     <div style={{ maxWidth: '860px' }}>
                         <h5 style={{ fontWeight: 600 }}>Unique features you’ll be hard pressed to

@@ -10,7 +10,7 @@ export const StyledActionBar = styled.div`
             height: 100%;    
             width: 350px;
             position: absolute;
-            right: 70px;
+            right: 180px;
             top: 54px;
         }
         .tip {

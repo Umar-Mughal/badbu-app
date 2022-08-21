@@ -10,7 +10,7 @@ import GilroyMediumItalicWoff from './assets/fonts/Gilroy-MediumItalic.woff';
 import GilroyMediumItalicWoff2 from './assets/fonts/Gilroy-MediumItalic.woff2';
 import GilroySBoldWoff from './assets/fonts/Gilroy-Semibold.woff';
 import GilroySBoldWoff2 from './assets/fonts/Gilroy-Semibold.woff2';
-import connectBgMob from './assets/images/connect-bg-mob.png';
+import connectBgMob from './assets/images/connect-bg-mob.svg';
 import { ReactComponent as Facebook } from './assets/images/facebook-icon.svg';
 import { ReactComponent as Instagram } from './assets/images/instagram-icon.svg';
 import token from './assets/images/token.svg';
@@ -260,7 +260,7 @@ export const GlobalStyles = createGlobalStyle`
         max-width: 1120px;
         @media (min-width: 1600px) {
             &.second {
-                width: calc(100% + 15vw);
+                width: calc(100% + 12vw);
                 transform: translateX(-8vw);
             }
         }

@@ -49,7 +49,7 @@ export const StyledBudboUnique = styled.div`
         padding: 64px 41px;
         
         @media (min-width: 1600px) {
-            width: calc(100% + 13vw);
+            width: calc(100% + 12vw);
             transform: translateX(-8vw);
         }
 
