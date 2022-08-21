@@ -78,7 +78,6 @@ function ActionBar() {
                         <span className='d-none d-md-block'>Investor Perks:</span>
                         <span className='text-colored d-block d-md-none'>Earn Perks When you Invest!</span>
                     </div>
-
                     <div className='d-flex flex-nowrap pin-wrapper justify-content-between justify-content-md-start'
                         style={{ gap: '4px' }}>
                         <span className='text-colored border'>$500</span>
@@ -137,7 +136,6 @@ function ActionBar() {
                                     allTheAbove
                                     color='red'
                                 />
-
                             </div>
                             <p className='tip pt-2'>
                                 <span>*</span>

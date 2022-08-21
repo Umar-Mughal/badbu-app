@@ -439,13 +439,14 @@ export const StyledOptions = styled.p`
         height: 25px;
         background-color: #F3F1F8;
     }
-
 `
-
 export const StyledCard = styled.div`
     background-color: #fff;
     padding: 16px;
     font-size: 14px;
+  @media (max-width: 767px) {
+    height: 218px;
+  }
     color: var(--text-purple);
     @media (min-height: 1000px) {
         padding: 31px 16px;
