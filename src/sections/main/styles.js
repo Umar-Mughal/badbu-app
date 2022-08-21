@@ -1,19 +1,16 @@
 import styled from 'styled-components/macro';
 
 export const StyledMain = styled.section`
-    max-height: 98vh;
-    padding-top: 200px;
-    padding-bottom: 169px;
-    @media (min-width: 1600px) {
-        min-height: 90vh;
-    }
+      min-height: 100vh;
+      padding-top: 200px;
+      padding-bottom: 230px;
+ 
     @media (max-width: 767px) {
         padding-top: 100px;
-        padding-bottom: 70px;
     }
-    @media (max-width: 1200px) {
-        min-height: 70vh;
-    }
+    //@media (max-width: 1200px) {
+    //    min-height: 70vh;
+    //}
     > div {
         z-index: 1;
         h1 {

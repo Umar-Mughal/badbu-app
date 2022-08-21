@@ -41,7 +41,7 @@ export const mockBillionSolution = {
   ),
   image: solutionImage,
   description: (
-    <h3>
+    <h3 className="mt-5">
       {' '}
       Any new industry comes with new challenges (especially when{' '}
       <span style={{ color: 'var(--primary)' }}>

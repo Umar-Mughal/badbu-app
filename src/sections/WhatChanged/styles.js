@@ -1,6 +1,6 @@
 import styled from 'styled-components/macro';
 
-import whatChangedImgMob from '../../assets/images/what-changed-image-mob.png'
+import whatChangedImgMob from '../../assets/images/what-changed-image.png'
 
 export const StyledWhatChanged = styled.div`
     .width-wrapper {
@@ -14,15 +14,13 @@ export const StyledWhatChanged = styled.div`
         }
     }   
     .mob-img {
-        height: 520px;
+        height: 320px;
         position: relative;
-        margin: 20px 0;
         &::after {
             content: '';
             position: absolute;
             top: 0;
-            left: -16px;
-            width: 100vw;
+            width: 90vw;
             height: 100%;
             background: url(${whatChangedImgMob}) center center /contain no-repeat;
         }

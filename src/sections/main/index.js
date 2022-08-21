@@ -7,7 +7,6 @@ import { StyledMain } from './styles'
 
 function Main() {
     useEffect(() => {
-        console.log('lottie loaded');
         Lottie.loadAnimation({
             container: document.querySelector('#background'),
             animationData: mainAnimation,
