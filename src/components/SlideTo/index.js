@@ -35,8 +35,7 @@ export default function SlideTo({ discover }) {
                     <div className='actions d-flex justify-content-center rounded border d-inline-flex'>
                         <div onClick={() => setMobileMode(false)}
                             className={getClassNames('m-1 px-2 rounded',
-                                mobileMode ? '' : 'active',
-                                tabletMode ? 'pe-none opacity-50' : '')}>
+                                mobileMode ? '' : 'active')}>
                             <span>DESKTOP</span>
                         </div>
                         <div onClick={() => setMobileMode(true)}
