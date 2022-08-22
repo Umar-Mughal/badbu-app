@@ -10,6 +10,28 @@ export const StyledBlockChainTechnology = styled.div`
         }
     }
   
+    .token_1_blockchain {
+          height: 120px;
+          width: 110px;
+          position: absolute;
+          right: -53px;
+          top: 400px;
+    }
+    .token_2_blockchain {
+      height: 115px;
+      width: 101px;
+      position: absolute;
+      left: -150px;
+      top: -180px;
+    }
+
+  .token_3_blockchain {
+    width: 59px;
+    height: 65px;
+    position: absolute;
+    right: -105px;
+    top: 300px;
+  }
     .blockchain-list {
         li {
             margin-bottom: 57px;
