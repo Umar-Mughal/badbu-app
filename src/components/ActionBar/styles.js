@@ -18,7 +18,7 @@ export const StyledActionBar = styled.div`
           position: absolute;
           top: 54px;
         .sidebar__box {
-          height: 80vh;
+          height: 72vh;
           overflow-y: scroll;
           overflow-x: visible;
         }
@@ -284,13 +284,13 @@ export const StyledActionBar = styled.div`
                 max-width: 350px;
                 font-weight: 500;
                 background-color: #f9f8fc;
-                max-height: 80vh;
+                max-height: 72vh;
                 overflow-y: scroll;
                 &::-webkit-scrollbar {
                     display: none;
                 }
                 @media (max-width: 1600px) {
-                    max-height: 65vh;
+                    max-height: 72vh;
                 }
                 &-logo {
                     width: 28px;
