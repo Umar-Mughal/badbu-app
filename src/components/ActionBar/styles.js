@@ -6,11 +6,16 @@ import tokenMirror from '../../assets/images/token-mirror.svg';
 
 export const StyledActionBar = styled.div`
         border-radius: 16px;
-        @media (min-width: 768px) {
+      right: 180px;
+    
+      @media (min-width: 1800px) {
+        right: -50px;
+      }
+
+  @media (min-width: 768px) {
           height: 100%;
           width: 350px;
           position: absolute;
-          right: 180px;
           top: 54px;
           .side-bar-container {
             height: 80vh;
@@ -30,7 +35,7 @@ export const StyledActionBar = styled.div`
         }
         @media (min-width: 768px) and (max-width: 1600px) {
             width: 280px;
-            right: 92px;
+            right: 120px;
         }
         .side-bar-container {
             background-color: #f9f8fc;

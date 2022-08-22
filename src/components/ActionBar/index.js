@@ -236,8 +236,6 @@ function ActionBar() {
                     <SideBarSwiper />
                 </div>
             </div>
-            <div className="d-none d-md-block ghost-container position-absolute">
-            </div>
         </StyledActionBar>
     )
 }

@@ -327,15 +327,22 @@ export const StyledWhiteWrapper = styled.div`
         top: -50%;
         transform: translateY(-50%);
     }
+
     .video-container {
         position: relative;
         z-index: 1;
         width: 100%;
-        max-width: 1116.91px;
+        max-width: 77%;
+      @media(min-width: 1700px){
+        max-width: 71%;
+      }
       @media(min-width: 1800px){
         margin-left: 7%;
       }
 
+      @media(max-width: 667px){
+        max-width: 100%;
+      }
       iframe {
             width: 100%;
           height: 627px;
