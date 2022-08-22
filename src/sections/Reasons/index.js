@@ -5,7 +5,7 @@ import mentor from '../../assets/images/mentor.png'
 import reason5 from '../../assets/images/reason5-bg.png';
 import reason7Map from '../../assets/images/reason7-map.png'
 import mentor2 from '../../assets/images/stephen-CFO.png'
-import table from '../../assets/images/table.svg'
+import table from '../../assets/images/table.png'
 import PhoneSwiper from '../../components/PhoneSwiper';
 import { StyledReasons } from './styles'
 import { mockMentorAwards, mockStephenCFO, reason1Content } from './constants'

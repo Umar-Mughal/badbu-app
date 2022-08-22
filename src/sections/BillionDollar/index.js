@@ -23,7 +23,8 @@ function BillionDollar({ setCurrentLink }) {
                     <div style={{ maxWidth: '860px' }}>
                         <h2 className='mt-0' id="idea" ref={ref}
                             style={{ maxWidth: '760px' }}>{mockBillionIdea.title}</h2>
-                        <img src={mockBillionIdea.image} alt="idea" className="w-100" />
+                        <img src={mockBillionIdea.image} alt="idea" className="w-100 d-none d-md-block" />
+                        <img src={mockBillionIdea.imageMobile} alt="idea" className="w-100 d-block d-md-none" />
                         {mockBillionIdea.description}
                         {mockBillionIdea.text}
                         <Notification

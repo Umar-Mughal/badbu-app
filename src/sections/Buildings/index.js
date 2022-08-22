@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-hook-inview';
 
+import budbo from '../../assets/images/budbo-bg.png'
 import { StyledBuildings } from './styles';
 
 function Buildings({ setCurrentLink }) {
@@ -17,7 +18,7 @@ function Buildings({ setCurrentLink }) {
         <StyledBuildings className='position-relative'>
             <div className="container">
                 <div className='width-wrapper col-12 col-xl-10'>
-                    <div style={{ maxwidth: '850px' }}>
+                    <div style={{ maxWidth: '850px' }}>
                         <h1 id="ecosystem" ref={ref}>Unpacking the Budding <br />
                             Technologies, Inc. <br />
                             Ecosystem
@@ -27,8 +28,12 @@ function Buildings({ setCurrentLink }) {
                             touching every stakeholder of the cannabis industry and <br /> poised
                             for endless scalability at all levels.
                         </h3>
+                        <div>
+                            <img src={budbo} alt="budbo" className='budbo__img d-none d-md-block' />
+                        </div>
                     </div>
                 </div>
+
             </div>
         </StyledBuildings>
     )

@@ -25,7 +25,7 @@ function BlockchainTechnology({ setCurrentLink }) {
                                 <li key={index}>
                                     <img className='mb-4 mb-md-5 logo' src={blockchainTechnology.logo} alt={index} />
                                     {blockchainTechnology.title}
-                                    <div className='bg-white p-4 my-4'>
+                                    <div className={`bg-white my-4 ${blockchainTechnology.classes}`}>
                                         <picture className="d-flex">
                                             <source srcSet={blockchainTechnology.image} media="(min-width: 992px)" />
                                             <img src={blockchainTechnology.image2} alt={index} className="w-75 mx-auto" />

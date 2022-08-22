@@ -1,4 +1,5 @@
 import whatChangedImg from '../../assets/images/what-changed-image.png'
+import whatChangedImgMob from '../../assets/images/what-changed-image-mob.png'
 import Notification from '../../components/Notification'
 import { StyledWhatChanged } from './styles'
 import { mockOffers, mockTextContent } from './constants'
@@ -12,7 +13,9 @@ function WhatChanged() {
                         {mockTextContent.title}
                         <img src={whatChangedImg} alt="what-changed" className='d-none d-md-block 
                         what-changed-img w-100' />
-                        <div className='mob-img d-md-none' />
+                        <div className='mob-img d-md-none'>
+                            <img src={whatChangedImgMob} alt="what-changed" width='100%' height='100%'/>
+                        </div>
                         <h3>{mockTextContent.subtitle}</h3>
                         <h4>{mockTextContent.subtitle2}</h4>
                         <ul className='offers'>

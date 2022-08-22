@@ -198,8 +198,10 @@ function ActionBar() {
                                   onClick={() => handleOnClick(5)}>$50k+</span>
                         </div>
                     </div>
-                    <PerkSlider sliderRef={sliderRef}/>
-                    <div className='invest-wrapper'  onMouseEnter={() => setShowEarnPerk(false)}>
+                    <div onMouseEnter={() => setShowEarnPerk(false)}>
+                        <PerkSlider sliderRef={sliderRef}/>
+                    </div>
+                    <div className='invest-wrapper'>
                         <p className='tip mb-3'><span>*</span>Some perks available to U.S. and Canada <span className='d-none d-xxl-inline-block'>
                         Investors</span> Only</p>
                         <div className='invest d-md-flex justify-content-between align-items-center pt-3 pb-4'>
@@ -223,9 +225,7 @@ function ActionBar() {
                                 </div>
                             </div>
 
-                            <div className={getClassNames('mt-2 mt-md-0 flex-grow-1', isShorterScreen ? '' : 'ms-md-4')}
-                                 onMouseEnter={() => setShowEarnPerk(false)}
-                            >
+                            <div className={getClassNames('mt-2 mt-md-0 flex-grow-1', isShorterScreen ? '' : 'ms-md-4')}>
                                 <div className='input-wrapper d-none d-md-block w-100'>
                                     <input type='text'
                                            placeholder='0.00'

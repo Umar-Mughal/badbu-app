@@ -413,7 +413,7 @@ export const StyledSwiper = styled.div`
     .swiper-button-prev {
       left: 90px;
       @media (max-width: 767px) {
-        left: 96px;
+        //left: 96px;
       }
         &::after {
             background: url(${swiperArrow}) center center/contain no-repeat;
@@ -424,7 +424,7 @@ export const StyledSwiper = styled.div`
     .swiper-button-next {
       right: 90px;
       @media (max-width: 767px) {
-        right: 96px;
+        //right: 96px;
       }
         &::after {
             background: url(${swiperArrow}) center center/contain no-repeat;

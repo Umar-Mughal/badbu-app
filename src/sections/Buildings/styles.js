@@ -3,9 +3,13 @@ import styled from 'styled-components/macro';
 import buildings from '../../assets/images/buildings.png';
 
 export const StyledBuildings = styled.div`
-    margin: 150px 0 350px;
+    margin: 150px 0 180px;
     @media (max-width: 768px) {
         margin: 80px 0;
+    }
+    .budbo__img {
+      width: 70%;
+      margin-top: 100px;
     }
     h1 {
         @media (max-width: 768px) {

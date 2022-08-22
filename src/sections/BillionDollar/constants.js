@@ -1,9 +1,11 @@
 import ideaImage from '../../assets/images/billion-idea.png';
+import ideaImageMob from '../../assets/images/billion-idea-mob.png';
 import solutionImage from '../../assets/images/billion-solution.png';
 
 export const mockBillionIdea = {
   title: 'A Multi-Billion Dollar Business Idea in 30 Seconds',
   image: ideaImage,
+  imageMobile: ideaImageMob,
   description: (
     <h3>
       The global cannabis market (regulated and illicit) is currently estimated

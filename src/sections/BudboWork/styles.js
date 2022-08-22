@@ -1,25 +1,14 @@
 import styled from 'styled-components/macro';
 
-import workImageMob from '../../assets/images/work-bg-mob.png';
 export const StyledBudboWork = styled.div`
     h2 {
         margin-top: 148px;
     }
-    .mob-img {
-        height: 520px;
+      .mob-img {
         position: relative;
-        margin: 20px 0;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            width: 100%;
-            //width: 100vw;
-            height: 100%;
-            background: url(${workImageMob}) center center /contain no-repeat;
-        }
-    } 
-    p {
+        margin: 40px -15px;
+      }
+  p {
         color: var(--text-purple);
         font-weight: 500;
         @media (max-width: 767px) {

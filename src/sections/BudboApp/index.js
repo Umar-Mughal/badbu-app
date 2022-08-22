@@ -1,4 +1,3 @@
-import budbo from '../../assets/images/budbo-bg.png'
 import inside1 from '../../assets/images/inside1.svg'
 import inside2 from '../../assets/images/inside2.svg'
 import inside3 from '../../assets/images/inside3.svg'
@@ -19,7 +18,6 @@ function BudboApp() {
                 <div className="width-wrapper col-12 col-xl-10">
                     <div style={{ maxWidth: '860px' }}>
                         <div className="mob-img d-md-none" />
-                        <img src={budbo} alt="budbo" className='budbo-img d-none d-md-block' />
                         <h2 className='budbo-title'>Budbo App</h2>
                         <h5>The right cannabis products just a screen tap away</h5>
                         <span className='budbo-badge fw-bold d-block mb-2'>BUDBO APP</span>

@@ -7,7 +7,11 @@ export const StyledBudboApp = styled.div`
         width: 100%;
     }
     .budbo-title {
-        margin-top: -120px;
+      padding-top: 30px;
+        @media (max-width: 767px) {
+          margin-top: -50px;
+          padding-top: 0;
+        }
         color: var(--primary);
     }
     .budbo-badge {

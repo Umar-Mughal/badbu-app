@@ -9,6 +9,7 @@ export const StyledBlockChainTechnology = styled.div`
             }
         }
     }
+  
     .blockchain-list {
         li {
             margin-bottom: 57px;
