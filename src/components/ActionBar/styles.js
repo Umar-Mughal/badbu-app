@@ -17,11 +17,12 @@ export const StyledActionBar = styled.div`
           width: 350px;
           position: absolute;
           top: 54px;
-          .side-bar-container {
-            height: 80vh;
-            overflow: scroll;
-          }
+        .sidebar__box {
+          height: 80vh;
+          overflow-y: scroll;
+          overflow-x: visible;
         }
+}
         .tip {
             color: var(--text-purple);
             font-size: 12px !important;
@@ -277,7 +278,7 @@ export const StyledActionBar = styled.div`
             position: absolute;
             top: 0;
             left: calc(-350px - 1rem);
-            display: none;
+            display: block;
             .core {
                 padding: 30px 24px;
                 max-width: 350px;

@@ -9,8 +9,9 @@ import { StyledActionBar } from './styles';
 import SideBarSwiper from './Swiper';
 
 function ActionBar() {
-    const { height } = useWindowResize();
+    const { height, width } = useWindowResize();
     const [perkLevel, setPerkLevel] = useState(null)
+    const [showEarnPerk, setShowEarnPerk] = useState(false)
     const [perkPrice, setPerkPrice] = useState('')
     const isShorterScreen = height < 1000;
     const sliderRef = useRef();
@@ -46,7 +47,63 @@ function ActionBar() {
     return (
         <StyledActionBar>
             <div className='side-bar-container border w-100 position-sticky my-4 my-md-0'>
-                <div>
+                <div className='earn-perks pe-3' style={{display: width > 767 && showEarnPerk ? 'block': 'none'}}>
+                    <div className='core rounded border'>
+                        <div className='d-flex justify-content-center align-items-center pb-3'>
+                            <img src={earnPerks} alt="earn perks" className='earn-perks-logo' />
+                            <span className='d-block ms-3 text-nowrap mt-2'>Earn Perks When you Invest!</span>
+                        </div>
+
+                        <div className='py-3 border-top border-bottom d-flex flex-column' style={{ gap: '16px' }}>
+                            <Card
+                                title='$50,000+'
+                                description='Round Trip Plane Ticket to a Conference'
+                                allTheAbove
+                                withRed
+                                color='yellow'
+                            />
+                            <Card
+                                title='$25,000  -  $49,999'
+                                description='Dinner with the Founders and Team'
+                                allTheAbove
+                                withRed
+                                color='grey'
+                            />
+                            <Card
+                                title='$10,000  -  $24,999'
+                                description='Admission Ticket to a Conference'
+                                allTheAbove
+                                withRed
+                                color='bronze'
+                            />
+                            <Card
+                                title='$5,000  -  $9,999'
+                                description='Limited Edition Budbo NFT (Worldwide)'
+                                allTheAbove
+                                withRed
+                                color='green'
+                            />
+                            <Card
+                                title='$2,500  -  $4,999'
+                                description='Budbo Shirt'
+                                allTheAbove
+                                withRed
+                                color='purple'
+                            />
+                            <Card
+                                title='$500  - $2,499'
+                                description='Shareholder badge on your Budbo profile'
+                                allTheAbove
+                                color='red'
+                            />
+                        </div>
+                        <p className='tip pt-2'>
+                            <span>*</span>
+                            Some perks available to U.S. and Canada Investors Only
+                        </p>
+                    </div>
+                </div>
+                <div className={'sidebar__box'}>
                     <div className='top-content rounded-top'>
                         <ul className='d-flex justify-content-between flex-wrap position-relative'>
                             <li className='position-relative'>
@@ -114,70 +171,29 @@ function ActionBar() {
                             <span className='d-none d-md-block'>Investor Perks:</span>
                             <span className='text-colored d-block d-md-none'>Earn Perks When you Invest!</span>
                         </div>
-                        <div className='d-flex flex-nowrap pin-wrapper justify-content-between justify-content-md-start'
-                             style={{ gap: '4px' }}>
-                            <span className='text-colored border' onClick={() => handleOnClick(0)}>$500</span>
-                            <span className='text-colored border' onClick={() => handleOnClick(1)}>$2.5k</span>
-                            <span className='text-colored border' onClick={() => handleOnClick(2)}>$5k</span>
-                            <span className='text-colored border' onClick={() => handleOnClick(3)}>$10k</span>
-                            <span className='text-colored border' onClick={() => handleOnClick(4)}>$25k</span>
-                            <span className='text-colored border' onClick={() => handleOnClick(5)}>$50k+</span>
-                        </div>
-                        <div className='earn-perks pe-3'>
-                            <div className='core rounded border'>
-                                <div className='d-flex justify-content-center align-items-center pb-3'>
-                                    <img src={earnPerks} alt="earn perks" className='earn-perks-logo' />
-                                    <span className='d-block ms-3 text-nowrap mt-2'>Earn Perks When you Invest!</span>
-                                </div>
-
-                                <div className='py-3 border-top border-bottom d-flex flex-column' style={{ gap: '16px' }}>
-                                    <Card
-                                        title='$50,000+'
-                                        description='Round Trip Plane Ticket to a Conference'
-                                        allTheAbove
-                                        withRed
-                                        color='yellow'
-                                    />
-                                    <Card
-                                        title='$25,000  -  $49,999'
-                                        description='Dinner with the Founders and Team'
-                                        allTheAbove
-                                        withRed
-                                        color='grey'
-                                    />
-                                    <Card
-                                        title='$10,000  -  $24,999'
-                                        description='Admission Ticket to a Conference'
-                                        allTheAbove
-                                        withRed
-                                        color='bronze'
-                                    />
-                                    <Card
-                                        title='$5,000  -  $9,999'
-                                        description='Limited Edition Budbo NFT (Worldwide)'
-                                        allTheAbove
-                                        withRed
-                                        color='green'
-                                    />
-                                    <Card
-                                        title='$2,500  -  $4,999'
-                                        description='Budbo Shirt'
-                                        allTheAbove
-                                        withRed
-                                        color='purple'
-                                    />
-                                    <Card
-                                        title='$500  - $2,499'
-                                        description='Shareholder badge on your Budbo profile'
-                                        allTheAbove
-                                        color='red'
-                                    />
-                                </div>
-                                <p className='tip pt-2'>
-                                    <span>*</span>
-                                    Some perks available to U.S. and Canada Investors Only
-                                </p>
-                            </div>
+                        <div className='d-flex perkPrices flex-nowrap pin-wrapper justify-content-between justify-content-md-start'
+                             style={{ gap: '4px' }}
+                             onMouseLeave={() => setShowEarnPerk(false)}
+                        >
+                            <span className='text-colored border'
+                                  onMouseEnter={() => setShowEarnPerk(true)}
+                                  onClick={() => handleOnClick(0)}>$500</span>
+                            <span className='perkPrices text-colored border' onClick={() => handleOnClick(1)}>$2.5k</span>
+                            <span className='text-colored border'
+                                  onMouseEnter={() => setShowEarnPerk(true)}
+                                  onClick={() => handleOnClick(2)}
+                            >$5k
+                            </span>
+                            <span className='text-colored border'
+                                  onMouseEnter={() => setShowEarnPerk(true)}
+                                  onClick={() => handleOnClick(3)}>$10k
+                            </span>
+                            <span className='text-colored border'
+                                  onMouseEnter={() => setShowEarnPerk(true)}
+                                  onClick={() => handleOnClick(4)}>$25k</span>
+                            <span className='text-colored border'
+                                  onMouseEnter={() => setShowEarnPerk(true)}
+                                  onClick={() => handleOnClick(5)}>$50k+</span>
                         </div>
                     </div>
                     <PerkSlider sliderRef={sliderRef}/>
@@ -235,6 +251,8 @@ function ActionBar() {
                     </div>
                     <SideBarSwiper />
                 </div>
+            </div>
+            <div className="d-none d-md-block ghost-container position-absolute">
             </div>
         </StyledActionBar>
     )
