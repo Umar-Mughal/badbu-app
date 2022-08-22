@@ -1,13 +1,48 @@
+import {useEffect, useRef, useState} from 'react';
+
 import arrowSm from '../../assets/images/arrow-sm.svg';
 import earnPerks from '../../assets/images/earn-perks.svg';
 import { getClassNames, useWindowResize } from '../../shared';
+import PerkSlider from '../Misc/Slider/PerkSlider';
 import Card from './Card';
 import { StyledActionBar } from './styles';
 import SideBarSwiper from './Swiper';
 
 function ActionBar() {
     const { height } = useWindowResize();
+    const [perkLevel, setPerkLevel] = useState(null)
+    const [perkPrice, setPerkPrice] = useState('')
     const isShorterScreen = height < 1000;
+    const sliderRef = useRef();
+
+    const handleOnClick = index => {
+        sliderRef.current.slickGoTo(index);
+    };
+
+    const handleInvest = () => {
+        if(perkPrice >= 500 && perkPrice <= 2499){
+            setPerkLevel(0)
+        }
+        else if(perkPrice >= 2500 && perkPrice <= 4999){
+            setPerkLevel(1)
+        }
+        else if(perkPrice >= 5000 && perkPrice <= 9999){
+            setPerkLevel(2)
+        }
+        else if(perkPrice >= 10000 && perkPrice <= 24999){
+            setPerkLevel(3)
+        }
+        else if(perkPrice >= 25000 && perkPrice <= 49999){
+            setPerkLevel(4)
+        }
+        else if(perkPrice >= 50000){
+            setPerkLevel(5)
+        }
+    }
+    useEffect(()=> {
+        handleOnClick(perkLevel)
+    }, [perkLevel])
+
     return (
         <StyledActionBar>
             <div className='side-bar-container border w-100 position-sticky my-4 my-md-0'>
@@ -80,12 +115,12 @@ function ActionBar() {
                     </div>
                     <div className='d-flex flex-nowrap pin-wrapper justify-content-between justify-content-md-start'
                         style={{ gap: '4px' }}>
-                        <span className='text-colored border'>$500</span>
-                        <span className='text-colored border'>$2.5k</span>
-                        <span className='text-colored border'>$5k</span>
-                        <span className='text-colored border'>$10k</span>
-                        <span className='text-colored border'>$25k</span>
-                        <span className='text-colored border'>$50k+</span>
+                        <span className='text-colored border' onClick={() => handleOnClick(0)}>$500</span>
+                        <span className='text-colored border' onClick={() => handleOnClick(1)}>$2.5k</span>
+                        <span className='text-colored border' onClick={() => handleOnClick(2)}>$5k</span>
+                        <span className='text-colored border' onClick={() => handleOnClick(3)}>$10k</span>
+                        <span className='text-colored border' onClick={() => handleOnClick(4)}>$25k</span>
+                        <span className='text-colored border' onClick={() => handleOnClick(5)}>$50k+</span>
                     </div>
                     <div className='earn-perks pe-3'>
                         <div className='core rounded border'>
@@ -144,50 +179,8 @@ function ActionBar() {
                         </div>
                     </div>
                 </div>
+                <PerkSlider sliderRef={sliderRef}/>
                 <div className='invest-wrapper'>
-                    <div className='cards-wrapper d-flex flex-nowrap mb-2 pe-3'>
-                        <Card
-                            title='$500  - $2,499'
-                            description='Shareholder badge on your Budbo profile'
-                            color='red'
-                        />
-                        <Card
-                            title='$2,500  -  $4,999'
-                            description='Budbo Shirt'
-                            allTheAbove
-                            withRed
-                            color='purple'
-                        />
-
-                        <Card
-                            title='$5,000  -  $9,999'
-                            description='Limited Edition Budbo NFT (Worldwide)'
-                            allTheAbove
-                            withRed
-                            color='green'
-                        />
-                        <Card
-                            title='$10,000  -  $24,999'
-                            description='Admission Ticket to a Conference'
-                            allTheAbove
-                            withRed
-                            color='bronze'
-                        />
-                        <Card
-                            title='$25,000  -  $49,999'
-                            description='Dinner with the Founders and Team'
-                            allTheAbove
-                            withRed
-                            color='grey'
-                        />
-                        <Card
-                            title='$50,000+'
-                            description='Round Trip Plane Ticket to a Conference'
-                            allTheAbove
-                            withRed
-                            color='yellow'
-                        />
-                    </div>
                     <p className='tip mb-3'><span>*</span>Some perks available to U.S. and Canada <span className='d-none d-xxl-inline-block'>
                         Investors</span> Only</p>
                     <div className='invest d-md-flex justify-content-between align-items-center pt-3 pb-4'>
@@ -199,7 +192,12 @@ function ActionBar() {
                                     isShorterScreen ? 'ms-md-3' : '')}>Min. $495</span>
                             </div>
                             <div className='input-wrapper d-md-none w-100 ms-3'>
-                                <input type='text' placeholder='0.00' className='border px-3' />
+                                <input type='text'
+                                       placeholder='0.00'
+                                       className='border px-3'
+                                       value={perkPrice}
+                                       onChange={e => setPerkPrice(e.target.value)}
+                                />
                                 <div className='h-100 d-flex justify-content-center align-items-center border position-absolute'>
                                     <span>$</span>
                                 </div>
@@ -208,13 +206,19 @@ function ActionBar() {
 
                         <div className={getClassNames('mt-2 mt-md-0 flex-grow-1', isShorterScreen ? '' : 'ms-md-4')}>
                             <div className='input-wrapper d-none d-md-block w-100'>
-                                <input type='text' placeholder='0.00' className='border px-3' />
+                                <input type='text'
+                                       placeholder='0.00'
+                                       className='border px-3'
+                                       value={perkPrice}
+                                       onChange={e => setPerkPrice(e.target.value)}
+                                />
                                 <div className='h-100 d-flex justify-content-center align-items-center border position-absolute'>
                                     <span>$</span>
                                 </div>
                             </div>
                             {isShorterScreen &&
-                                <a href="#" className='text-nowrap btn-primary w-100 d-flex align-items-center justify-content-center ms-md-3'>
+                                <a onClick={handleInvest}
+                                   className='text-nowrap btn-primary w-100 d-flex align-items-center justify-content-center ms-md-3'>
                                     INVEST
                                     <img src={arrowSm} alt="arrow" className='ms-2' />
                                 </a>}
@@ -222,12 +226,12 @@ function ActionBar() {
 
                     </div>
                     {!isShorterScreen &&
-                        <a href="#" className='d-none mt-2 mb-3 text-nowrap btn-primary w-100 d-md-flex align-items-center justify-content-center'>
+                        <a onClick={handleInvest}
+                           className='d-none mt-2 mb-3 text-nowrap btn-primary w-100 d-md-flex align-items-center justify-content-center'>
                             INVEST
                             <img src={arrowSm} alt="arrow" className='ms-2' />
                         </a>}
                 </div>
-
                 <SideBarSwiper />
             </div>
             <div className="d-none d-md-block ghost-container position-absolute">

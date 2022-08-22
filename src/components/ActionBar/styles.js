@@ -444,6 +444,7 @@ export const StyledCard = styled.div`
     background-color: #fff;
     padding: 16px;
     font-size: 14px;
+    height: 100%;
   @media (max-width: 767px) {
     height: 218px;
   }

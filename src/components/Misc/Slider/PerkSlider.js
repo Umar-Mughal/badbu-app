@@ -1,25 +1,36 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import Card from '../ActionBar/Card';
+import Card from '../../../components/ActionBar/Card';
+import {useWindowResize} from '../../../shared';
 import {PerkSliderStyle} from './PerkSliderStyle';
 
 // Import css files
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function PerkSlider() {
-    var settings = {
-        // dots: true,
-        // infinite: true,
-        speed: 200,
-        slidesToShow: 1,
-        slidesToScroll: 2,
-        adaptiveHeight: true
-    };
+export default function PerkSlider({sliderRef}) {
+    const {width} = useWindowResize()
+    const getSettings = () => {
+        if(width < 768){
+            return {
+                speed: 200,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+            }
+        }
+
+        return {
+            speed: 200,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: true
+        }
+    }
     return (
         <PerkSliderStyle>
-            <Slider {...settings}>
+            <Slider {...getSettings()} ref={sliderRef}>
                 <Card
                     title='$500  - $2,499'
                     description='Shareholder badge on your Budbo profile'
