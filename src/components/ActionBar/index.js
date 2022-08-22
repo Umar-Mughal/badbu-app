@@ -46,7 +46,9 @@ function ActionBar() {
 
     return (
         <StyledActionBar>
-            <div className='side-bar-container border w-100 position-sticky my-4 my-md-0'>
+            <div className='side-bar-container border w-100 position-sticky my-4 my-md-0'
+                 onMouseLeave={() => setShowEarnPerk(false)}
+            >
                 <div className='earn-perks pe-3' style={{display: width > 767 && showEarnPerk ? 'block': 'none'}}>
                     <div className='core rounded border'>
                         <div className='d-flex justify-content-center align-items-center pb-3'>
@@ -104,7 +106,9 @@ function ActionBar() {
                     </div>
                 </div>
                 <div className={'sidebar__box'}>
-                    <div className='top-content rounded-top'>
+                    <div className='top-content rounded-top'
+                         onMouseEnter={() => setShowEarnPerk(false)}
+                    >
                         <ul className='d-flex justify-content-between flex-wrap position-relative'>
                             <li className='position-relative'>
                             <span className='title'>
@@ -173,31 +177,29 @@ function ActionBar() {
                         </div>
                         <div className='d-flex perkPrices flex-nowrap pin-wrapper justify-content-between justify-content-md-start'
                              style={{ gap: '4px' }}
-                             onMouseLeave={() => setShowEarnPerk(false)}
+                             onMouseEnter={() => setShowEarnPerk(true)}
                         >
                             <span className='text-colored border'
-                                  onMouseEnter={() => setShowEarnPerk(true)}
                                   onClick={() => handleOnClick(0)}>$500</span>
-                            <span className='perkPrices text-colored border' onClick={() => handleOnClick(1)}>$2.5k</span>
+                            <span className='perkPrices text-colored border'
+
+                                  onClick={() => handleOnClick(1)}>$2.5k
+                            </span>
                             <span className='text-colored border'
-                                  onMouseEnter={() => setShowEarnPerk(true)}
                                   onClick={() => handleOnClick(2)}
                             >$5k
                             </span>
                             <span className='text-colored border'
-                                  onMouseEnter={() => setShowEarnPerk(true)}
                                   onClick={() => handleOnClick(3)}>$10k
                             </span>
                             <span className='text-colored border'
-                                  onMouseEnter={() => setShowEarnPerk(true)}
                                   onClick={() => handleOnClick(4)}>$25k</span>
                             <span className='text-colored border'
-                                  onMouseEnter={() => setShowEarnPerk(true)}
                                   onClick={() => handleOnClick(5)}>$50k+</span>
                         </div>
                     </div>
                     <PerkSlider sliderRef={sliderRef}/>
-                    <div className='invest-wrapper'>
+                    <div className='invest-wrapper'  onMouseEnter={() => setShowEarnPerk(false)}>
                         <p className='tip mb-3'><span>*</span>Some perks available to U.S. and Canada <span className='d-none d-xxl-inline-block'>
                         Investors</span> Only</p>
                         <div className='invest d-md-flex justify-content-between align-items-center pt-3 pb-4'>
@@ -221,7 +223,9 @@ function ActionBar() {
                                 </div>
                             </div>
 
-                            <div className={getClassNames('mt-2 mt-md-0 flex-grow-1', isShorterScreen ? '' : 'ms-md-4')}>
+                            <div className={getClassNames('mt-2 mt-md-0 flex-grow-1', isShorterScreen ? '' : 'ms-md-4')}
+                                 onMouseEnter={() => setShowEarnPerk(false)}
+                            >
                                 <div className='input-wrapper d-none d-md-block w-100'>
                                     <input type='text'
                                            placeholder='0.00'
