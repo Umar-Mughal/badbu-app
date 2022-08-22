@@ -1,6 +1,7 @@
 import { Autoplay,Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import {useWindowResize} from '../../shared';
 import { StyledSwiper } from './styles';
 import { mockSideBarContent } from './constants';
 
@@ -9,11 +10,19 @@ import 'swiper/css/pagination';
 import 'swiper/css';
 
 export default function SideBarSwiper() {
+    const {width} = useWindowResize();
+    const getSwiperProps = () => {
+        const sProps = [Pagination, Navigation]
+        if(width > 767){
+            sProps.push(Autoplay)
+        }
+        return sProps
+    }
     return (
         <StyledSwiper className='bg-white border-top'>
             <Swiper
                 slidesPerView={1}
-                modules={[Pagination, Navigation, Autoplay]}
+                modules={getSwiperProps()}
                 navigation
                 autoplay={{delay: 20000}}
                 pagination={{ clickable: true, dynamicBullets: true }}>
