@@ -1,4 +1,4 @@
-import { Navigation, Pagination } from 'swiper';
+import { Autoplay,Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { StyledSwiper } from './styles';
@@ -13,8 +13,9 @@ export default function SideBarSwiper() {
         <StyledSwiper className='bg-white border-top'>
             <Swiper
                 slidesPerView={1}
-                modules={[Pagination, Navigation]}
+                modules={[Pagination, Navigation, Autoplay]}
                 navigation
+                autoplay={{delay: 20000}}
                 pagination={{ clickable: true, dynamicBullets: true }}>
                 {mockSideBarContent.map((slide, index) => (
                     <SwiperSlide key={index}>
