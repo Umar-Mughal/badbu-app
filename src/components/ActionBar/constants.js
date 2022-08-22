@@ -35,6 +35,14 @@ export const mockSideBarContent = [
         text: 'Proud new shareholder of Budding Tech and am excited ' +
             'to join the blockchain platform.'
     },
+    {
+        photo: photo1,
+        name: 'Travis Tommy',
+        invested: 'Beach City Hydroponics',
+        text: 'Proud new shareholder of Budding Tech and am excited ' +
+            'to join the blockchain platform.'
+    },
+
 
 ]
 
