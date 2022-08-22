@@ -7,20 +7,15 @@ import tokenMirror from '../../assets/images/token-mirror.svg';
 export const StyledActionBar = styled.div`
         border-radius: 16px;
         @media (min-width: 768px) {
-          //height: 100vh;
-          //width: 350px;
-          //border: 1px solid black;
-          //position: absolute;
-          //right: 100px;
-          //top: 54px;
-          
-            height: 100%;    
-            width: 350px;
-            position: absolute;
-            right: 180px;
-            top: 54px;
-        .sidebar__box {
-          display: unset;
+          height: 100%;
+          width: 350px;
+          position: absolute;
+          right: 180px;
+          top: 54px;
+          .side-bar-container {
+            height: 80vh;
+            overflow: scroll;
+          }
         }
         .tip {
             color: var(--text-purple);
@@ -40,8 +35,6 @@ export const StyledActionBar = styled.div`
         .side-bar-container {
             background-color: #f9f8fc;
             z-index: 99;
-          height: 80vh;
-          overflow: scroll;
             border-radius: 16px;
             @media (min-width: 768px) {
                 transform: translateX(50px);
