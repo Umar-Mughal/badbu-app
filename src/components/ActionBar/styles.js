@@ -40,6 +40,8 @@ export const StyledActionBar = styled.div`
         .side-bar-container {
             background-color: #f9f8fc;
             z-index: 99;
+          height: 80vh;
+          overflow: scroll;
             border-radius: 16px;
             @media (min-width: 768px) {
                 transform: translateX(50px);
