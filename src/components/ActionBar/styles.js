@@ -7,11 +7,20 @@ import tokenMirror from '../../assets/images/token-mirror.svg';
 export const StyledActionBar = styled.div`
         border-radius: 16px;
         @media (min-width: 768px) {
+          //height: 100vh;
+          //width: 350px;
+          //border: 1px solid black;
+          //position: absolute;
+          //right: 100px;
+          //top: 54px;
+          
             height: 100%;    
             width: 350px;
             position: absolute;
             right: 180px;
             top: 54px;
+        .sidebar__box {
+          display: unset;
         }
         .tip {
             color: var(--text-purple);
@@ -401,12 +410,9 @@ export const StyledSwiper = styled.div`
         }
     }
     .swiper-button-prev {
-        left: 75px;
-        @media (max-width: 1600px) {
-            left: 55px;
-        }
-      @media (max-width: 480px) {
-        left: 90px;
+      left: 90px;
+      @media (max-width: 767px) {
+        left: 96px;
       }
         &::after {
             background: url(${swiperArrow}) center center/contain no-repeat;
@@ -415,12 +421,9 @@ export const StyledSwiper = styled.div`
     }
 
     .swiper-button-next {
-        right: 75px;
-        @media (max-width: 1600px) {
-            right: 55px;    
-        }
-      @media (max-width: 480px) {
-        right: 90px;
+      right: 90px;
+      @media (max-width: 767px) {
+        right: 96px;
       }
         &::after {
             background: url(${swiperArrow}) center center/contain no-repeat;
