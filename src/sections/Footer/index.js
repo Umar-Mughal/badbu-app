@@ -14,7 +14,7 @@ function Footer() {
                     <img src={logo} alt="logo" className="d-block mb-4 mb-xl-0"/>
                     <div className="d-none d-md-block border-wrapper position-relative w-100 flex-grow-1">
                         <a
-                            href={'#'}
+                            href={'/'}
                             className="btn btn-primary py-3 fw-bold col-10 mx-auto
                         col-md-6 col-xxl-9 mt-4 mt-xl-0 text-nowrap">Invest now<img src={arrowSm} alt="arrow"
                                                                                     className="ms-1"/>
@@ -27,7 +27,7 @@ function Footer() {
                     </p>
                     <div className="d-md-none d-block border-wrapper position-relative w-100 flex-grow-1">
                         <a
-                            href={'#'}
+                            href={'/'}
                             className="btn btn-primary py-3 fw-bold col-10 mx-auto
                         col-md-6 col-xxl-9 mt-4 mt-xl-0 text-nowrap">Invest now<img src={arrowSm} alt="arrow"
                                                                                     className="ms-1"/>
