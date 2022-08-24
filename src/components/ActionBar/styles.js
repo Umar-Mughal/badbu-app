@@ -456,7 +456,7 @@ export const StyledCard = styled.div`
   }
     color: var(--text-purple);
     @media (min-width: 1800px) {
-      padding: 9px 16px;
+      padding: 9.2px 16px;
     }
     .card-content {
         width: calc(100% - 77px);
