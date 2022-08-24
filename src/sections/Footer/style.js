@@ -3,15 +3,56 @@ import styled from 'styled-components/macro';
 export const StyledFooter = styled.footer`
     background-color: #fff;
     padding: 64px 0;
+  border-radius: 48px 0 0 0;
+    margin-left: 30px;
     .container {
-        @media (min-width: 1600px) {
-            max-width: 1580px;
-        }
+  
     }
+  .footer_box_1{
+    width: 50%;
+    @media (max-width: 767px){
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .footer_box_2{
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    @media (max-width: 767px){
+      width: 100%;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .border_footer {
+      border: 1px solid #E0DBED;
+      margin-top: 40px;
+    }
+    div {
+      @media (max-width: 767px){
+        margin-top: 50px;
+      }
+      button {
+        @media (max-width: 767px){
+          width: 90%;
+        }
+      }
+    }
+  }
+  .footer__text {
+    font-size: 18px;
+    @media(max-width: 767px){
+      font-size: 20px;
+      margin-top: 16px;
+    }
+  }
     @media (max-width: 767px) {
         margin-top: 112px;
-        border-radius: 48px 0 0 0;
         padding: 57px 0 40px;
+      padding-bottom: 15px;
+       margin-left: 0;
     }
     .exchange {
         p {
