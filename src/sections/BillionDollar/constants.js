@@ -7,7 +7,7 @@ export const mockBillionIdea = {
   image: ideaImage,
   imageMobile: ideaImageMob,
   description: (
-    <h3>
+    <h3 className='mt-md-5'>
       The global cannabis market (regulated and illicit) is currently estimated
       at <span className="text-primary">$344 billion USD. </span> The regulated
       market in the US alone{' '}
