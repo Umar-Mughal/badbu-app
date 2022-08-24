@@ -17,15 +17,10 @@ export const StyledActionBar = styled.div`
           width: 350px;
           position: absolute;
           top: 54px;
-        .sidebar__box {
-          height: 72vh;
-          overflow-y: scroll;
-          overflow-x: visible;
-        }
 }
         .tip {
             color: var(--text-purple);
-            font-size: 12px !important;
+            font-size: 11px !important;
             font-weight: 500;
             line-height: 17px;
             span:first-child {
@@ -33,6 +28,9 @@ export const StyledActionBar = styled.div`
                 padding-right: 5px;
                 font-size: 11px !important;
             }
+          @media (max-width: 767px) {
+            font-size: 12px !important;
+          }
         }
         @media (min-width: 768px) and (max-width: 1600px) {
             width: 280px;
@@ -48,7 +46,7 @@ export const StyledActionBar = styled.div`
                 top: 144px;
             }
             @media (min-width: 1600px) {
-                top: 171px;
+                top: 150px;
                 transform: translateX(30px);
             }
             @media (min-width: 1800px) {
@@ -65,33 +63,37 @@ export const StyledActionBar = styled.div`
                 h6 {
                     font-weight: 500;
                 }
-                ul {
-                    padding: 23px 38px 16px;
-                    @media (min-width: 768px) and (max-width: 1600px) {
-                        padding: 16px 7px 0px;
-                    }
+                div {
+                  padding: 32px 42px 0 42px;
+                  white-space: nowrap;
+                  @media (max-width: 767px) {
+                    padding-top: 0;
+                  }
+                  ul {
                     @media (max-width: 767px) {
-                        padding-top: 40px;
+                      padding-top: 40px;
                     }
-                    
+
                     li {
-                        margin-bottom: 16px;
-                        width: 50%;
-                        span {
-                            display: block;
-                            &:first-of-type {
-                                font-size: 14px;
-                            }
-                            &:last-of-type {
-                                font-size: 16px;
-                                color: #000;
-                            }
+                      margin-bottom: 16px;
+                      width: 50%;
+                      span {
+                        display: block;
+                        &:first-of-type {
+                          font-size: 14px;
                         }
-                        &:nth-child(5), &:nth-child(6) {
-                            margin-bottom: 0 !important;;  
+                        &:last-of-type {
+                          font-size: 16px;
+                          color: #000;
                         }
+                      }
+                      &:nth-child(5), &:nth-child(6) {
+                        margin-bottom: 0 !important;;
+                      }
                     }
-                }  
+                  }
+                }
+     
                 .offering-max {
                     display: block;
                     font-size: 10px;
@@ -102,7 +104,7 @@ export const StyledActionBar = styled.div`
                 }              
             }
             .hover-trigger {
-                padding: 16px calc(0.5rem + 10px) 16px calc(0.5rem + 10px);
+                padding: 8px calc(0.5rem + 10px) 16px calc(0.5rem + 10px);
                 @media (max-width: 767px) {
                     position: relative;
                     z-index: 10;
@@ -283,14 +285,12 @@ export const StyledActionBar = styled.div`
                 padding: 30px 24px;
                 max-width: 350px;
                 font-weight: 500;
-                background-color: #f9f8fc;
-                max-height: 72vh;
-                overflow-y: scroll;
+              padding-bottom: 20px;
+              border-radius: 16px;
+
+              background-color: #f9f8fc;
                 &::-webkit-scrollbar {
                     display: none;
-                }
-                @media (max-width: 1600px) {
-                    max-height: 72vh;
                 }
                 &-logo {
                     width: 28px;
@@ -387,6 +387,7 @@ export const StyledActionBar = styled.div`
 
 export const StyledSwiper = styled.div`
     padding: 24px;
+    padding-bottom: 16px;
     border-radius: 0 0 16px 16px;
     .swiper {
         padding-bottom: 30px;
@@ -446,11 +447,12 @@ export const StyledOptions = styled.p`
 `
 export const StyledCard = styled.div`
     background-color: #fff;
-    padding: 16px;
+    padding: 4px 16px;
     font-size: 14px;
     height: 100%;
   @media (max-width: 767px) {
     height: 218px;
+    padding: 16px;
   }
     color: var(--text-purple);
     @media (min-height: 1000px) {

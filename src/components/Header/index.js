@@ -98,8 +98,7 @@ function Header({ currentLink }) {
                     {rightList}
                 </div>
             </div>
-            <div className='header-bottom bg-white d-flex justify-content-between align-items-center w-100 px-3
-             px-xxl-4 py-2 py-xxl-3 border-top'>
+            <div className='header-bottom bg-white d-flex justify-content-between align-items-center w-100 px-3 py-2 border-top'>
                 <img src={isMobileMode ? headerLogoMob : headerLogo} alt="header-logo"
                     className='me-4 me-md-0 cursor-pointer'
                     onClick={() => {

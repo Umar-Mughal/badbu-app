@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-hook-inview';
 
-import table from '../../assets/images/table.png';
+import table from '../../assets/images/table3.png';
 import uniqueImage from '../../assets/images/unique-img.png';
 import uniqueImageMob from '../../assets/images/unique-img-mob.png';
 import violetMap from '../../assets/images/violet-map.svg';
