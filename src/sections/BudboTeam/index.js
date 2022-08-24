@@ -81,6 +81,32 @@ function BudboTeam({ setCurrentLink }) {
                         <Accordion title='How can I place my investment?' />
                         <Accordion title='When will the fully executed subscription agreement be sent?' />
                         <Accordion title='How long does payment process time take?' />
+                        <Accordion
+                            title='When will the fully executed subscription agreement be sent?'
+                            description={'The subscription agreement will be sent within a period of up to ten business days. '}
+                        />
+                        <Accordion
+                            title={'How long does payment process time take?'}
+                            description={'Payment will be processed within a period of up to ten days, ' +
+                                'depending on your method of payment. Generally, ' +
+                                'most payments will be processed within 5 to 7 business days.'}
+                        />
+                        <Accordion
+                            title={'Do you need to be an accredited investor?'}
+                            description={'For US residents – NO, we are accepting non-accredited investors.' +
+                                ' For Canadian Residents - we are only accepting accredited investors. ' +
+                                'For all other countries, we do not have an accreditation requirement.'}
+                        />
+                        <Accordion
+                            title={'Will you send a stock certificate or other \'proof\' of investment?'}
+                            description={'Yes, a fully executed subscription agreement will be sent ' +
+                                'to you once you have funded your investment and our Compliance ' +
+                                'Team has cleared your account of any anti-money laundering exceptions'}
+                        />
+                        <Accordion
+                            title={'I made a typing mistake when signing up, how can I find a remedy for it?'}
+                            description={'Sign into your DealMaker account, go to Your Profile to change your name and email'}
+                        />
                     </ul>
                 </div>
             </div>
