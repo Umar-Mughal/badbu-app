@@ -338,7 +338,7 @@ export const StyledWhiteWrapper = styled.div`
       }
       @media(min-width: 1800px){
         margin-left: 7%;
-        max-width: 65%;
+        max-width: 65.8%;
       }
 
       @media(max-width: 667px){

@@ -281,12 +281,14 @@ export const StyledActionBar = styled.div`
             top: 0;
             left: calc(-350px - 1rem);
             display: block;
+          width: 370px;
             .core {
                 padding: 30px 24px;
                 max-width: 350px;
                 font-weight: 500;
               padding-bottom: 20px;
               border-radius: 16px;
+              margin-left: -35px;
 
               background-color: #f9f8fc;
                 &::-webkit-scrollbar {
