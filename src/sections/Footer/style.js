@@ -34,7 +34,7 @@ export const StyledFooter = styled.footer`
       @media (max-width: 767px){
         margin-top: 50px;
       }
-      button {
+      a {
         @media (max-width: 767px){
           width: 90%;
         }

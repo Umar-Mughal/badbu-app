@@ -13,11 +13,12 @@ function Footer() {
                 <div className={'footer_box_1 d-flex align-items-center'}>
                     <img src={logo} alt="logo" className="d-block mb-4 mb-xl-0"/>
                     <div className="d-none d-md-block border-wrapper position-relative w-100 flex-grow-1">
-                        <button
+                        <a
+                            href={'#'}
                             className="btn btn-primary py-3 fw-bold col-10 mx-auto
                         col-md-6 col-xxl-9 mt-4 mt-xl-0 text-nowrap">Invest now<img src={arrowSm} alt="arrow"
                                                                                     className="ms-1"/>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className={'footer_box_2'}>
@@ -25,11 +26,12 @@ function Footer() {
                         pioneer the future!
                     </p>
                     <div className="d-md-none d-block border-wrapper position-relative w-100 flex-grow-1">
-                        <button
+                        <a
+                            href={'#'}
                             className="btn btn-primary py-3 fw-bold col-10 mx-auto
                         col-md-6 col-xxl-9 mt-4 mt-xl-0 text-nowrap">Invest now<img src={arrowSm} alt="arrow"
                                                                                     className="ms-1"/>
-                        </button>
+                        </a>
                         <p className="border_footer"/>
                     </div>
                 </div>
