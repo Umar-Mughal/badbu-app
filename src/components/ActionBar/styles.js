@@ -9,7 +9,7 @@ export const StyledActionBar = styled.div`
       right: 180px;
     
       @media (min-width: 1800px) {
-        right: -50px;
+        //right: -50px;
       }
 
   @media (min-width: 768px) {
@@ -41,17 +41,17 @@ export const StyledActionBar = styled.div`
             z-index: 99;
             border-radius: 16px;
             @media (min-width: 768px) {
-                transform: translateX(50px);
+                //transform: translateX(50px);
                 margin-bottom: 355px !important;
-                top: 144px;
-            }
-            @media (min-width: 1600px) {
                 top: 150px;
-                transform: translateX(30px);
             }
-            @media (min-width: 1800px) {
-                transform: translateX(-145px);
-            }
+            //@media (min-width: 1600px) {
+            //    top: 150px;
+            //    transform: translateX(30px);
+            //}
+            //@media (min-width: 1800px) {
+            //    transform: translateX(-145px);
+            //}
             @media (max-width: 1280px) {
                 position: relative !important;
             }
